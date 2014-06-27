@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="marray">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>America</item>
+        <item>England</item>
+        <item>Russia</item>
+        <item>China</item>
+        <item>Italy</item>
+    </string-array>
+
+    <string name="fbAppId">346691628715145</string>
+    <string name="app_name">SkyCheckin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email_id">abc@xyz.com</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_set">Set</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_send">Send</string>
+
+    <!-- USER LOGIN -->
+    <string name="btn_signin_facebook">Sign in with Facebook</string>
+    <string name="btn_signin_emil">Sign in with Email Account</string>
+    <string name="btn_new_user">New User</string>
+    <string name="txt_forgot_password">Forgot your password?</string>
+    <string name="txt_change_password">Change Password</string>
+
+    <!-- USER SIGNUP -->
+    <string name="hint_firt_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_optional">(optional)</string>
+    <string name="txt_new_user">New User</string>
+
+    <!-- EDIT USER -->
+
+    <string name="txt_header_edit_user">Edit Profile</string>
+    <string name="txt_personal_message">Personal Message (up to 140 characters)</string>
+    <string name="hint_personal_message">Personal Message</string>
+    <string name="btn_change_profile_pic">Change Profile Picture</string>
+    <string name="btn_remove_profile_pic">Remove Profile Picture</string>
+
+    <!-- DIALOG MESSAGE -->
+
+    <string name="hint_search">Search</string>
+    <string name="txt_logout">Are you sure you want\nto logout?</string>
+    <string name="txt_choose_seat">Choose Seat</string>
+
+    <!-- ALERT MESSAGE -->
+    <string name="btn_ok">OK</string>
+    <string name="alert_enter_lastname">Please enter last name</string>
+    <string name="alert_enter_firstname">Please enter first name.</string>
+    <string name="alert_enter_user_name">Please enter username</string>
+    <string name="alert_enter_email_id">Please enter email address</string>
+    <string name="alert_enter_password">Please enter password</string>
+    <string name="alert_enter_old_password">Please enter old password</string>
+    <string name="alert_enter_confirm_password">Please enter confirm password</string>
+    <string name="alert_select_gender">Please select gender</string>
+    <string name="alert_password_and_confirm_password_not_same">Password and confirm password not same</string>
+    <string name="alert_all_field_are_mandatory">All field are mandatory</string>
+    <string name="alert_select_date">Please select date</string>
+    <string name="alert_select_airline">Please select airline</string>
+    <string name="alert_enter_flight_number">Please enter flight number</string>
+    <string name="alert_enter_airport_code">Please enter airport code</string>
+    <string name="alert_title_select_airline">Select Airline</string>
+    <string name="alert_select_seat">Please select seat</string>
+    <string name="alert_personal_detail">Please enter personal detail</string>
+
+    <!-- LOADING MESSAGE -->
+
+    <string name="loading_signin">Signing in to SkyCheckin...</string>
+
+    <!-- CHECK IN FLIGHT -->
+    <string name="header_find_flight">Find Flight</string>
+    <string name="txt_find_flight_by_airline">Find flight by airline:</string>
+    <string name="txt_find_flight_by_route">Find flight by route:</string>
+    <string name="hint_select_date">Select Date</string>
+    <string name="hint_filight_number">Flight Number</string>
+    <string name="hint_airport_code">Airport Code</string>
+    <string name="txt_date">Date:</string>
+    <string name="txt_dep_city">Depaarture City</string>
+    <string name="txt_arr_city">Arrival City</string>
+
+    <!-- FIND FLIGHT -->
+    <string name="header_select_flight">Select Flight</string>
+    <string name="txt_sorry">Sorry.</string>
+
+    <!-- SELECT SEAT -->
+    <string name="header_select_seat">Select Seat</string>
+    <string name="btn_check_in">Check In</string>
+    <string name="txt_seat">Seat:</string>
+    <string name="txt_share_check_in">Share Checkin to...</string>
+    <string name="txt_you_are_about_check_in_to">You are about to check in to:</string>
+    <string name="txt_seat_not_display">Seat will not be displayed</string>
+    <string name="btn_done">Done</string>
+    <string name="txt_success_message">You have successfully checked in to flight</string>
+    <string name="txt_success_message_seat">, seat</string>
+    <string name="txt_no_seat_selected">No seat selected</string>
+    <string name="btn_delete_checkIn">Delete Checkin</string>
+
+    <!-- MESSAGE -->
+    <string name="hint_message">Message</string>
+    <string name="btn_block_user">Block User</string>
+    <string name="header_user_profile">My Profile</string>
+
+    <!-- USER PROFILE -->
+
+    <string name="txt_take_photo">Take Photo</string>
+    <string name="txt_gallery">Choose From Gallery</string>
+    <string name="txt_get_photo_title">Select From</string>
+
+    <!-- DATATASK REQUEST DIALOG -->
+    <string name="dialog_please_wait">Please Wait...</string>
+    <string name="dialog_signup_sigin">Signing in to SkyCheckin...</string>
+    <string name="txt_invite_friend">Invite Friend to Skycheckin</string>
+    <string name="txt_invite_friend_header">Invite Friend</string>
+    <string name="txt_instagram_header">Instagram Feed</string>
+    <string name="txt_instafeed">#skycheckin</string>
+    <string name="msg_no_data">Data not found!</string>
+
+</resources>

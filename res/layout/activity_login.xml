@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/scal_75dp"
+                android:src="@drawable/img_logo" />
+
+            <com.custom.MyButton
+                android:id="@+id/btnSignInFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_20dp"
+                android:layout_marginRight="@dimen/scal_20dp"
+                android:layout_marginTop="@dimen/scal_50dp"
+                android:background="@color/blue"
+                android:padding="@dimen/scal_10dp"
+                android:text="@string/btn_signin_facebook"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15" />
+
+            <LinearLayout
+                android:id="@+id/llEmailSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.custom.MyEditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_20dp"
+                    android:layout_marginRight="@dimen/scal_20dp"
+                    android:layout_marginTop="@dimen/scal_15dp"
+                    android:background="@drawable/img_text_field"
+                    android:hint="@string/hint_username"
+                    android:paddingLeft="@dimen/scal_5dp"
+                    android:paddingRight="@dimen/scal_5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_15" />
+
+                <com.custom.MyEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_20dp"
+                    android:layout_marginRight="@dimen/scal_20dp"
+                    android:layout_marginTop="@dimen/scal_15dp"
+                    android:background="@drawable/img_text_field"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/scal_5dp"
+                    android:paddingRight="@dimen/scal_5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.custom.MyButton
+                        android:id="@+id/btnNewUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/scal_20dp"
+                        android:layout_marginRight="@dimen/scal_10dp"
+                        android:layout_marginTop="@dimen/scal_15dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:padding="@dimen/scal_10dp"
+                        android:text="@string/btn_new_user"
+                        android:textColor="@color/btn_email_signin"
+                        android:textSize="@dimen/txt_15" />
+
+                    <com.custom.MyButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/scal_10dp"
+                        android:layout_marginRight="@dimen/scal_20dp"
+                        android:layout_marginTop="@dimen/scal_15dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:padding="@dimen/scal_10dp"
+                        android:text="@string/btn_login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_15" />
+                </LinearLayout>
+
+                <com.custom.MyTextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/scal_10dp"
+                    android:layout_marginTop="@dimen/scal_20dp"
+                    android:text="@string/txt_forgot_password"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_15" />
+            </LinearLayout>
+
+            <com.custom.MyButton
+                android:id="@+id/btnSignInEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_20dp"
+                android:layout_marginRight="@dimen/scal_20dp"
+                android:layout_marginTop="@dimen/scal_15dp"
+                android:background="@color/gray"
+                android:padding="@dimen/scal_10dp"
+                android:text="@string/btn_signin_emil"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

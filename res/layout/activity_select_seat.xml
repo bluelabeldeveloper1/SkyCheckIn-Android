@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/internal_screen_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.custom.MyButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_5dp"
+            android:background="@color/btn_header_cancel"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <com.custom.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/header_select_seat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_17" />
+
+        <com.custom.MyTextView
+            android:id="@+id/btnCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/scal_5dp"
+            android:background="@color/blue"
+            android:padding="@dimen/scal_5dp"
+            android:text="@string/btn_check_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scal_15dp" />
+    </LinearLayout>
+
+    <com.custom.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/scal_20dp"
+        android:gravity="center"
+        android:text="@string/txt_you_are_about_check_in_to"
+        android:textColor="@color/btn_email_signin"
+        android:textSize="@dimen/txt_17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/scal_5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/scal_5dp"
+        android:paddingRight="@dimen/scal_5dp" >
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_britishairway" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.custom.MyTextView
+                android:id="@+id/tvflightCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/scal_7dp"
+                android:layout_marginRight="@dimen/scal_7dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="BA 8888"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical" >
+
+                <com.custom.MyTextView
+                    android:id="@+id/tvDepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_7dp"
+                    android:layout_marginRight="@dimen/scal_7dp"
+                    android:gravity="center"
+                    android:text="SEA 06:45AM"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_10" />
+
+                <com.custom.MyTextView
+                    android:id="@+id/tvArrTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_7dp"
+                    android:layout_marginRight="@dimen/scal_7dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="YUR 08:05AM"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/scal_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llSetOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/scal_10dp"
+                android:layout_marginRight="@dimen/scal_10dp"
+                android:gravity="center"
+                android:text="@string/txt_seat"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_18" />
+
+            <com.custom.MyTextView
+                android:id="@+id/tvSeat"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_5dp"
+                android:layout_marginRight="@dimen/scal_5dp"
+                android:background="@drawable/img_text_field"
+                android:gravity="center|center_vertical|left"
+                android:paddingLeft="@dimen/scal_5dp"
+                android:paddingRight="@dimen/scal_5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSetOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/scal_10dp"
+                android:layout_marginRight="@dimen/scal_10dp"
+                android:gravity="center"
+                android:text="@string/txt_seat_not_display"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="italic" />
+
+            <com.custom.MyEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_text_field"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivSeatSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/scal_10dp"
+                android:layout_weight="1"
+                android:src="@drawable/selector_switch" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scal_10dp"
+        android:layout_marginRight="@dimen/scal_10dp"
+        android:layout_marginTop="@dimen/scal_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.custom.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/scal_7dp"
+            android:layout_weight="1"
+            android:text="@string/txt_share_check_in"
+            android:textColor="@color/btn_email_signin"
+            android:textSize="@dimen/txt_15" />
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/scal_10dp"
+            android:src="@drawable/selector_facebook" />
+
+        <ImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_twitter" />
+    </LinearLayout>
+
+    <com.custom.MyButton
+        android:id="@+id/btnDeleteChackIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scal_10dp"
+        android:layout_marginRight="@dimen/scal_10dp"
+        android:layout_marginTop="@dimen/scal_15dp"
+        android:background="@color/btn_email_signin"
+        android:padding="@dimen/scal_5dp"
+        android:text="@string/btn_delete_checkIn"
+        android:visibility="gone" />
+
+</LinearLayout>

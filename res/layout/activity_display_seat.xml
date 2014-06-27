@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/internal_screen_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.custom.MyTextView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_5dp"
+            android:background="@color/btn_header_cancel"
+            android:padding="@dimen/scal_5dp"
+            android:text="@string/btn_close"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plane_icon" />
+
+            <com.custom.MyTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_3dp"
+                android:gravity="center"
+                android:text="Air Canada 541"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_17" />
+        </LinearLayout>
+
+        <com.custom.MyTextView
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/scal_5dp"
+            android:background="@color/blue"
+            android:padding="@dimen/scal_5dp"
+            android:text="@string/btn_done"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.custom.MyTextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/scal_15dp"
+                android:gravity="center"
+                android:text="@string/txt_you_are_about_check_in_to"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/scal_10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <com.custom.MyTextView
+                        android:id="@+id/tvArrName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vancouver"
+                        android:textColor="@color/btn_email_signin"
+                        android:textSize="@dimen/txt_12" />
+
+                    <com.custom.MyTextView
+                        android:id="@+id/tvArrTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/scal_3dp"
+                        android:text="(08:30AM)"
+                        android:textColor="@color/btn_email_signin"
+                        android:textSize="@dimen/txt_10" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/scal_5dp"
+                    android:layout_marginRight="@dimen/scal_5dp"
+                    android:src="@drawable/arrow_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <com.custom.MyTextView
+                        android:id="@+id/tvDepName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="London"
+                        android:textColor="@color/btn_email_signin"
+                        android:textSize="@dimen/txt_12" />
+
+                    <com.custom.MyTextView
+                        android:id="@+id/tvDepTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/scal_3dp"
+                        android:text="(08:30AM)"
+                        android:textColor="@color/btn_email_signin"
+                        android:textSize="@dimen/txt_10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/scal_7dp"
+                android:src="@drawable/seatmap_title" />
+
+            <LinearLayout
+                android:id="@+id/llSeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/scal_7dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/scal_7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gray_divider" />
+
+            <com.custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_7dp"
+                android:singleLine="true"
+                android:text="@string/txt_no_seat_selected"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_10" />
+
+            <LinearLayout
+                android:id="@+id/llNoSeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_3dp"
+                android:layout_marginRight="@dimen/scal_3dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

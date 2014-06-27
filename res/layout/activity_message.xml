@@ -1,0 +1,203 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/internal_screen_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/internal_screen_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_7dp"
+                android:layout_marginRight="@dimen/scal_3dp"
+                android:src="@drawable/launch_btn"
+                android:visibility="invisible" />
+
+            <com.custom.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_7dp"
+                android:layout_marginRight="@dimen/scal_7dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Miranda S"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_17" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_3dp"
+                android:layout_marginRight="@dimen/scal_7dp"
+                android:src="@drawable/launch_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/llSendMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/scal_10dp"
+                android:paddingTop="@dimen/scal_10dp" >
+
+                <com.custom.MyEditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/scal_10dp"
+                    android:layout_marginRight="@dimen/scal_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_field"
+                    android:hint="@string/hint_message"
+                    android:paddingLeft="@dimen/scal_5dp"
+                    android:paddingRight="@dimen/scal_5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_15" />
+
+                <com.custom.MyTextView
+                    android:id="@+id/tvSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/scal_7dp"
+                    android:layout_weight="4"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="@string/btn_send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlockUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gray_divider" />
+
+                <com.custom.MyButton
+                    android:id="@+id/btnBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_15dp"
+                    android:layout_marginRight="@dimen/scal_15dp"
+                    android:layout_marginTop="@dimen/scal_10dp"
+                    android:background="@color/btn_email_signin"
+                    android:padding="@dimen/scal_5dp"
+                    android:text="@string/btn_block_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_15" />
+
+                <com.custom.MyButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_15dp"
+                    android:layout_marginRight="@dimen/scal_15dp"
+                    android:layout_marginTop="@dimen/scal_10dp"
+                    android:layout_marginBottom="@dimen/scal_10dp"
+                    android:background="@color/btn_block_cancel"
+                    android:padding="@dimen/scal_5dp"
+                    android:text="@string/btn_cancel"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.custom.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/scal_7dp"
+                android:layout_marginRight="@dimen/scal_7dp"
+                android:gravity="center"
+                android:text="@string/txt_sorry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_17" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_gravity="top" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_7dp"
+            android:layout_marginRight="@dimen/scal_3dp"
+            android:src="@drawable/launch_btn"
+            android:visibility="invisible" />
+
+        <com.custom.MyTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_7dp"
+            android:layout_marginRight="@dimen/scal_7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Miranda S"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_17" />
+
+        <ImageView
+            android:id="@+id/ivBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_3dp"
+            android:layout_marginRight="@dimen/scal_7dp"
+            android:src="@drawable/launch_btn" />
+    </LinearLayout>
+
+</FrameLayout>

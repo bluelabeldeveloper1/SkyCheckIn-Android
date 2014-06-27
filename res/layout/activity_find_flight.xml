@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/internal_screen_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/header_find_flight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_17" />
+
+        <com.custom.MyTextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/scal_5dp"
+            android:background="@drawable/btn_next"
+            android:gravity="center"
+            android:text="@string/btn_next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scal_15dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scal_5dp"
+        android:layout_marginRight="@dimen/scal_15dp"
+        android:layout_marginTop="@dimen/scal_15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.custom.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/txt_date"
+            android:textColor="@color/btn_email_signin"
+            android:textSize="@dimen/txt_17" />
+
+        <com.custom.MyTextView
+            android:id="@+id/etSelectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_text_field"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_select_date"
+            android:paddingLeft="@dimen/scal_5dp"
+            android:paddingRight="@dimen/scal_5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_edit_text"
+            android:textSize="@dimen/txt_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scal_15dp"
+        android:layout_marginRight="@dimen/scal_15dp"
+        android:layout_marginTop="@dimen/scal_15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivFindflightByairLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scal_5dp"
+            android:src="@drawable/selector_male_female" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_10dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.custom.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/txt_find_flight_by_airline"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_17" />
+
+            <com.custom.MyTextView
+                android:id="@+id/tvAirlines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/scal_15dp"
+                android:layout_marginTop="@dimen/scal_15dp"
+                android:background="@drawable/bg_drop_menu"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/scal_5dp"
+                android:paddingRight="@dimen/scal_15dp"
+                android:text="Select Airlines"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_17" />
+
+            <com.custom.MyEditText
+                android:id="@+id/etFlightnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/img_text_field"
+                android:hint="@string/hint_filight_number"
+                android:paddingLeft="@dimen/scal_5dp"
+                android:paddingRight="@dimen/scal_5dp"
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:textColorHint="@color/hint_edit_text"
+                android:textSize="@dimen/txt_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scal_15dp"
+        android:layout_marginRight="@dimen/scal_15dp"
+        android:layout_marginTop="@dimen/scal_15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivFindflightRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scal_5dp"
+            android:src="@drawable/selector_male_female" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scal_10dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.custom.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/txt_find_flight_by_route"
+                android:textColor="@color/btn_email_signin"
+                android:textSize="@dimen/txt_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/scal_10dp"
+                android:layout_marginTop="@dimen/scal_10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.custom.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/txt_dep_city"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_12" />
+
+                <com.custom.MyEditText
+                    android:id="@+id/etDepaartureAirportCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/scal_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_text_field"
+                    android:hint="@string/hint_airport_code"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/scal_5dp"
+                    android:paddingRight="@dimen/scal_5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_edit_text"
+                    android:textSize="@dimen/txt_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.custom.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/txt_arr_city"
+                    android:textColor="@color/btn_email_signin"
+                    android:textSize="@dimen/txt_12" />
+
+                <com.custom.MyEditText
+                    android:id="@+id/etarrivalAirportCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scal_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_text_field"
+                    android:hint="@string/hint_airport_code"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/scal_5dp"
+                    android:paddingRight="@dimen/scal_5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_edit_text"
+                    android:textSize="@dimen/txt_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

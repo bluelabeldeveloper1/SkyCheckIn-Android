@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="blue">#0064a3</color>
+    <color name="gray">#dcdcdc</color>
+    <color name="internal_screen_bg">#ebebeb</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_email_signin">#585858</color>
+    <color name="btn_header_cancel">#0098DB</color>
+    <color name="btn_logout_cancel">#D0D0D0</color>
+    <color name="hint_edit_text">#D1D1D1</color>
+    <color name="check_in_success_message">#34B3EA</color>
+    <color name="user_seat_bg">#33B2E9</color>
+    <color name="btn_block_cancel">#DCDCDC</color>
+    <color name="home_feed_header">#36ACDF</color>
+    <color name="invite_friend">#383838</color>
+
+</resources>
